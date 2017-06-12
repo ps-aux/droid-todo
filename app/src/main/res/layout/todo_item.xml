@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?> <layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="obj"
+            type="pro.absolutne.android.todo.entity.TodoItem"/>
+    </data>
+
+    <LinearLayout
+        android:id="@+id/todo_item"
+        style="@style/todo_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/todo_item_text"
+            style="@style/todo_item_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:background="@drawable/solid_color_shape"
+            android:text="@{obj.text}"/>
+    </LinearLayout>
+</layout>
+    
+
